@@ -769,6 +769,9 @@ ul.footer_social li a i:hover {
     position: relative;
 	float:left;
 	z-index:900;
+	height: 65px;
+	width: auto;
+	margin-top: -10px;
 }
 
 /* ----- 3. Social Icons ----- */
