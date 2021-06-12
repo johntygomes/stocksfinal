@@ -559,7 +559,7 @@ h3.subtitle {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   color: #656565;
 }
 
@@ -2030,6 +2030,7 @@ p.testimonials_name span {
 .features-list {
   display: inline-block; 
   font-size: 16px !important;
+  font-weight: 500 !important;
   text-align: start;
 }
 .query-text {
