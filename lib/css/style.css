@@ -2035,6 +2035,7 @@ p.testimonials_name span {
 .query-text {
   font-size: 16px !important; 
   color: black;
+  font-weight: 700;
 }
 .link-text {
   color: blue; 
