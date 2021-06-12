@@ -266,7 +266,7 @@ textarea {
 }
 
 .blue {
-  color: #3498db;
+  color: #0c54a0;
 }
 
 .white {
@@ -571,7 +571,7 @@ h3.subtitle {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border: 3px solid #01994d;
+  border: 3px solid #0c54a0;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   border-radius: 7px;
@@ -581,7 +581,7 @@ h3.subtitle {
   float: left;
   width: 4px;
   height: 4px;
-  background-color: #01994d;
+  background-color: #0c54a0;
   border: 2px solid #fff;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -601,7 +601,7 @@ h3.subtitle {
 
 .separator_wrapper::after,
 .separator_wrapper::before {
-  background-color: #01994d;
+  background-color: #0c54a0;
   display: inline-block;
   vertical-align: middle;
   content: "";
@@ -887,7 +887,7 @@ ul.footer_social li a i:hover {
 	width:100%;
 	z-index:10;
 	/* background: url(http://placehold.it/1920x1280); */
-	background: url(../images/pexels-alesia-kozik-6781008.jpg);
+	background: url(../images/Landing-Page-Background.png);
 	background-position: center top;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1004,8 +1004,8 @@ input.register-input {
 
 input.register-submit {
   color: #fff;
-  border: 1px solid #01994d;
-  background-color: #01994d;
+  border: 1px solid #0c54a0;
+  background-color: #0c54a0;
   cursor: pointer;
   display: inline-block;
   font-size: 13px;
