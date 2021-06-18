@@ -114,7 +114,7 @@
                     </div>
 
                     <!--end sevencol -->
-            
+
             <!--begin fivecol -->
             <div class="fivecol last">
               <!--begin register_form_wrapper -->
@@ -154,6 +154,7 @@
                       name="email"
                       placeholder="Enter Email"
                     />
+
                     <input
                       class="register-input white-input"
                       type="text"
@@ -181,6 +182,11 @@
                       id="register-button"
                       class="register-submit"
                     />
+                    <div class="loader">
+                      <div class="loading">
+                      </div>
+                    </div>
+
                   </form>
                   <!--end register form -->
                 </div>
@@ -756,7 +762,7 @@
     <!-- posting data to rest api -->
     <script>
       document.addEventListener("submit", (e) => {
-        console.log('running async call')
+        document.getElementsByClassName("loader")[0].style.display = "block";
         // Store reference to form to make later code easier to read
         const form = e.target;
       
@@ -767,8 +773,10 @@
         });
       
         // Prevent the default form submit
+        // document.getElementsByClassName("loader")[0].style.display = "none";
         e.preventDefault();
         // alert('Thank you for submitting!!Excited To Connect With You')
+        
       });
     </script>
 
