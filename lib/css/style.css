@@ -685,9 +685,9 @@ body {
 
 .loader {
   display: none;
-  top: 30%;
-  left: 73%;
-  position: absolute;
+  position: relative;
+  top: -170px;
+  left: 50px;
   transform: translate(-50%, -50%);
 }
 
@@ -2003,8 +2003,7 @@ p.testimonials_name span {
     width: 100%;
   }
   .loader {
-    top: 30%;
-    left: 50%;
+    left: -10px;
   }
 }
 
