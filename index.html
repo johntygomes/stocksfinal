@@ -137,42 +137,42 @@
                   <form
                     id="register-form"
                     class="register"
-                    action="register.php"
+                    action="https://mkstocks-rest.herokuapp.com/api/user-create/"
                     method="post"
                   >
                     <input
                       class="register-input white-input"
                       type="text"
                       required
-                      name="register_names"
+                      name="name"
                       placeholder="Enter Name"
                     />
                     <input
                       class="register-input white-input"
                       type="email"
                       required
-                      name="register_email"
+                      name="email"
                       placeholder="Enter Email"
                     />
                     <input
                       class="register-input white-input"
                       type="text"
                       required
-                      name="register_phone"
+                      name="mobile"
                       placeholder="Enter Mobile Number"
                     />
                     <input
                       class="register-input white-input"
                       type="text"
                       required
-                      name="register_phone"
+                      name="trading_view_username"
                       placeholder="Enter Trading View Username"
                     />
                     <input
                       class="register-input white-input"
                       type="text"
                       required
-                      name="register_phone"
+                      name="telegram_username"
                       placeholder="Enter Telegram Username"
                     />
                     <input
@@ -752,6 +752,28 @@
       });
     </script>
     <!--end shrink header script -->
+    
+    <!-- posting data to rest api -->
+    <script>
+      document.addEventListener("submit", (e) => {
+        console.log('running async call')
+        // Store reference to form to make later code easier to read
+        const form = e.target;
+      
+        // Post data using the Fetch API
+        fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+        });
+      
+        // Prevent the default form submit
+        e.preventDefault();
+        // alert('Thank you for submitting!!Excited To Connect With You')
+      });
+    </script>
+
+    <!-- end posting data to rest api -->
+
 
     <!--begin fitvids script -->
     <script src="lib/js/jquery.fitvids.js"></script>
